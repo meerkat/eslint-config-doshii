@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-doshii",
   "description": "JavaScript Styling ESLint config for Doshii",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": {
     "name": "Jimmy Cann",
     "email": "mail@jimmycann.com",
