@@ -26,6 +26,7 @@ module.exports = {
     "$": true,
     "sequelize": true,
     "Sequelize": true,
+    "POS_BASE_URL": true,
     "PARTNER_BASE_URL": true
   },
 
