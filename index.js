@@ -46,7 +46,7 @@ module.exports = {
         arrowParens: "avoid"
       }
     ],
-    "object-shorthand": ["error", "never"],
+    "object-shorthand": ["error", "properties"],
     "no-return-assign": ["error", "except-parens"],
     "func-names": ["error", "never"],
     "comma-dangle": ["error", "never"],
