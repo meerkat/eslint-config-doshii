@@ -33,7 +33,7 @@ module.exports = {
   },
 
   rules: {
-    "arrow-parens": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"],
     "no-underscore-dangle": 0,
     "no-console": "error",
     "mocha/no-exclusive-tests": "error",
