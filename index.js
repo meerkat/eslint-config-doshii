@@ -1,21 +1,42 @@
 module.exports = {
+  parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 2020,
+    project: "./tsconfig.json",
+    sourceType: "module",
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
+      jsx: true,
+      modules: true
     },
-    sourceType: "module"
   },
-
+  extends: [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended",
+  ],
+  plugins: [
+    "@typescript-eslint",
+    "import",
+    "mocha",
+    "prettier",
+    "react",
+    "react-hooks",
+    "simple-import-sort",
+    "jsx-a11y",
+    "jest",
+  ],
   env: {
     es6: true,
+    es2020: true,
     node: true,
-    mocha: true
+    mocha: true,
+    browser: true,
+    jquery: true,
+    "jest/globals": true
   },
-
-  extends: ["airbnb-base", "plugin:prettier/recommended"],
-  plugins: ["import", "prettier", "mocha"],
-
   globals: {
     document: false,
     navigator: false,
@@ -33,6 +54,7 @@ module.exports = {
   },
 
   rules: {
+    // https://eslint.org/docs/rules/#possible-errors
     "arrow-parens": ["error", "as-needed"],
     "no-underscore-dangle": 0,
     "no-console": "error",
@@ -40,6 +62,7 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
+        trailingComma: "none",
         semi: true,
         printWidth: 120,
         singleQuote: true,
@@ -66,6 +89,8 @@ module.exports = {
         ignoreComments: true,
         ignoreStrings: true
       }
-    ]
+    ],
+    "sort-import": 0, // Off in favor of sort-imports plugin
+    "react/jsx-filename-extension": [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
   }
 };
