@@ -92,5 +92,14 @@ module.exports = {
     ],
     "sort-import": 0, // Off in favor of sort-imports plugin
     "react/jsx-filename-extension": [2, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
+    'no-use-before-define': 0, // Off in favor of @typescript-eslint/no-use-before-define
+    '@typescript-eslint/no-use-before-define': [1],
+    'no-duplicate-imports': 0, // Off in favor of @typescript-eslint/no-duplicate-imports
+    'no-sequences': 0, // See https://github.com/prettier/eslint-config-prettier#other-rules-worth-mentioning
+    'no-return-await': 0, // Off in favor of @typescript-eslint/return-await
+    'require-await': 0, // Off in favor of @typescript-eslint/require-await
+    'no-shadow': 0, // Off in favor of @typescript-eslint/no-shadow
+    'init-declarations': 0, // Off in favor of @typescript-eslint/init-declarations
+    'no-unused-vars': 0, // Off in favor of @typescript-eslint/no-unused-vars
   }
 };
