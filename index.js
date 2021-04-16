@@ -132,6 +132,9 @@ module.exports = {
   settings: {
     jest: {
       version: 26
-    }
+    },
+    'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] },
+    'import/resolver': { node: { extensions: ['.d.ts', '.js', '.ts', '.tsx'] } },
+    react: { version: 'detect' }
   }
 };
