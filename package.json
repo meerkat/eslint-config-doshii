@@ -1,27 +1,47 @@
 {
   "name": "eslint-config-doshii",
   "description": "JavaScript Styling ESLint config for Doshii",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "author": {
     "name": "Jimmy Cann",
     "email": "mail@jimmycann.com",
     "url": "https://jimmycann.com/"
   },
+  "contributors": [
+    "Mo Kargas <mo.kargas@doshii.io> (https://doshii.io)"
+  ],
   "bugs": {
-    "url": "https://github.com/yjimk/eslint-config-doshii/issues"
+    "url": "https://github.com/doshii-io/eslint-config-doshii/issues"
   },
   "dependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-mocha": "^6.3.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1",
-    "prettier-eslint": "^9.0.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-jquery": "^1.5.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-mocha": "^8.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^21.0.0",
+    "typescript": "^4.2.4"
   },
-  "homepage": "https://github.com/yjimk/eslint-config-doshii",
+  "peerDependencies": {
+    "eslint": "^7.24.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
+  },
+  "homepage": "https://github.com/doshii-io/eslint-config-doshii",
   "keywords": [
     "JavaScript Standard Style",
     "check",
@@ -49,11 +69,18 @@
     "verify"
   ],
   "license": "MIT",
-  "main": "index.js",
-  "peerDependencies": {},
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "prettier.js",
+    "prettier.config.js"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/yjimk/eslint-config-doshii.git"
+    "url": "git://github.com/doshii-io/eslint-config-doshii.git"
   },
-  "scripts": {}
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {}
 }
