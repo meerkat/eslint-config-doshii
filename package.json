@@ -3,9 +3,9 @@
   "description": "JavaScript Styling ESLint config for Doshii",
   "version": "3.0.0",
   "author": {
-    "name": "Jimmy Cann",
-    "email": "mail@jimmycann.com",
-    "url": "https://jimmycann.com/"
+    "name": "Doshii Connect Pty Ltd.",
+    "email": "mo.kargas@doshii.io",
+    "url": "https://doshii.io"
   },
   "contributors": [
     "Mo Kargas <mo.kargas@doshii.io> (https://doshii.io)"

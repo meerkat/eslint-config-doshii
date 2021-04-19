@@ -47,4 +47,4 @@ You can override settings from the shareable config by adding them directly into
 
 ## License
 
-MIT. Copyright (c) [Jimmy Cann](https://jimmycann.com).
+MIT. Copyright (c) [Doshii Connect Pty Ltd](https://doshii.io).
